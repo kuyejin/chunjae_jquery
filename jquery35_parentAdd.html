@@ -17,6 +17,9 @@
     <script>
     $(document).ready(function(){
         //p요소를 클릭하면, <div class='border'>불금 퐈이팅~!</div> 을 각 각의 p요소의 부모요소로 추가
+        $("p").click(function(){
+            $(this).wrap("<div class='border'>불금 퐈이팅~!</div>");
+        })
 
     });    
     </script>

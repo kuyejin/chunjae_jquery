@@ -19,6 +19,10 @@
     $(document).ready(function(){
         //.abs 요소를 클릭하면, 클릭된 요소의 가로 위치, 세로 위치, 폭, 높이를 
         //아이디가 result인 곳에 출력
+        $(".abs").click(function(){
+            var loc = $(this).offer();
+            $("#result").text(this.tagName + " coords("+loc.left+","+ loc.top+", width:" + $(this).width()+)
+        })
 
     });    
     </script>
